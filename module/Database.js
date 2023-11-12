@@ -15,7 +15,9 @@ dotenv.config()
                 database: 'natjecanja_hp6c',
                 password: '1fyYE2OCCwLKp5XNlTfQAlAgiZQI79UL',
                 port: 5432,
-                ssl : true
+                ssl: {
+                    rejectUnauthorized: false,
+                  },
             });
 
             this.client.connect();
