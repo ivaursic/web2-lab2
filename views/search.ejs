@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+  <h1><%= title %></h1>
+
+  <h2>1. SQL umetanje</h2>
+  <form id="searchForm" action="/search" method="post">
+    <span>Cilj nam je dobiti ime kreatora natjecanja za upisano ime natjecanja, ako postoji.</span>
+    <br>
+    <span>"Nogomet" daje ispravan rezultat u oba slucaja, dok "' OR 1 = 1; --" (tautologija) ovisno o ranjivosti.</span>
+    <br>
+    <br>
+    <label for="query">Unesite pojam za pretragu:</label>
+    <input type="text" id="input" name="input">
+    <br>
+    <input type="checkbox" id="vulnerability" name="vulnerability"> Ranjivost ukljucena
+    <br>
+    <input type="submit" value="Pretrazi">
+  </form>
+<br>
+<br>
+  <h2>2. Losa autentifikacija</h2>  
+  <h3>Autentifikacija bez ranjivosti</h3>
+<form id="loginForm" method="POST" action="/login">
+  <span>Implementacija autentifikacije pomocu sesija.</span>
+  <br>
+  <br>
+  <label for="username">Korisnicko ime:</label>
+  <input type="text" id="username" name="username">
+  <br>
+  <label for="password">Lozinka:</label>
+  <input type="password" id="password" name="password">
+  <br>
+  <input type="submit" value="Autentificiraj">
+</form>
+<br>
+<h3>Autentifikacija s ranjivosti</h3>
+<form id="loginFormBad" method="GET" action="/login_bad">
+  <span>Primjer lose autentifikacije.</span>
+  <br>
+  <br>
+  <label for="badUsername">Korisnicko ime:</label>
+  <input type="text" id="badUsername" name="username">
+  <br>
+  <label for="badPassword">Lozinka:</label>
+  <input type="password" id="badPassword" name="password">
+  <br>
+  <input type="submit" value="Autentificiraj">
+</form>
+
+
+<p id="error"></p>
+<p id="secret"></p>
+  <div id="results"></div>
+
+</body>
+
+</html>
+

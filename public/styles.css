@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  h1, h2, h3 {
+    color: #333;
+  }
+  
+  form {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"],
+  input[type="checkbox"] {
+    margin-bottom: 15px;
+    padding: 12px; /* Pove?avanje visine input polja */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #063c5b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: auto; /* Smanjivanje ?irine gumba */
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #063c5b;
+  }
+  
+  input[type="checkbox"] {
+    margin-bottom: 15px;
+    width: auto;
+    box-sizing: border-box;
+  }
+  
+  #error {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  #secret {
+    font-weight: bold;
+  }
+  
+  #results {
+    margin-top: 20px;
+  }
+  
+  #sessionData {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+  }
+  
+  #sessionData p {
+    margin: 5px 0;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  

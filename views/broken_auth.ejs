@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Losa autentifikacija</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <h1>Losa autentifikacija</h1>
+
+  <p id="secret">Autentificirani ste!</p>
+
+  
+  <div id="sessionData">
+    <h2>Podaci o sesiji</h2>
+    <p>Korisnicko ime: <%= sessionData.sessionData.username %></p>
+    <p>ID sesije: <%= sessionData.sessionData.sessionID %></p>
+    <p>Secret: <%= sessionData.sessionData.secret %></p>
+
+  </div>
+
+  <form action="/logout" method="get">
+    <input type="submit" value="Odjava">
+  </form>
+
+</body>
+</html>
