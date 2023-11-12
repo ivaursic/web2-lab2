@@ -1,6 +1,6 @@
 // config.js
-const externalUrl = process.env.RENDER_EXTERNAL_URL;
-const port = externalUrl && process.env.PORT ? parseInt(process.env.PORT) : 4080;
+const externalUrl = 'https://sigurnost-web2lab2.onrender.com';
+const port = externalUrl && 5432 ? parseInt(5432) : 4080;
 
 module.exports = {
   externalUrl,
