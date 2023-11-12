@@ -1,7 +1,6 @@
 const { query } = require('express');
 const { Pool } = require('pg');
 var pg_format = require('pg-format');
-import { Pool } from 'pg'
 import dotenv from 'dotenv'
 dotenv.config()
 
