@@ -1,7 +1,7 @@
 const { query } = require('express');
 const { Pool } = require('pg');
 var pg_format = require('pg-format');
-import dotenv from 'dotenv'
+const dotenv = require('dotenv');
 dotenv.config()
 
     class Database
@@ -10,16 +10,10 @@ dotenv.config()
         {
             this.client = new Pool(
             {
-                host: 'localhost',
-                port: 5432,
-                user: 'postgres',
-                password: 'bazepodataka',
-                database: 'web2-lab1',
-
-                user: process.env.DB_USER,
-                host: process.env.DB_HOST,
-                database: 'web2_demo_db',
-                password: process.env.DB_PASSWORD,
+                user: 'natjecanja_hp6c_user',
+                host: 'dpg-ckqq1og1hnes73avuvpg-a',
+                database: 'natjecanja_hp6c',
+                password: '1fyYE2OCCwLKp5XNlTfQAlAgiZQI79UL',
                 port: 5432,
                 ssl : true
             });
