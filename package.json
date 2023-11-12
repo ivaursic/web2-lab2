@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1", 
-    "build": "npm run clean && npm run copy-views",
+    "build": "npm run clean && mkdir -p dist && npm run copy-views",
     "clean": "rm -rf dist",
-    "copy-views": "cp -r views/ dist/views/",
+    "copy-views": "cp -r views/ dist/",
     "start": "node index.js"
 
   },
